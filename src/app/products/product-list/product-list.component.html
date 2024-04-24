@@ -1,0 +1,10 @@
+<main class="relative">
+    <div class='flex flex-col'>
+      <div class="flex justify-center items-center flex-1 flex-col w-full max-sm:w-full">
+        <app-product-item *ngFor="let product of products | async " [routerLink]="['/product-detail', product]" (click)="goToProductDetails(product)">
+        </app-product-item>
+      </div>
+      <product-detail *ngIf="productSelected" [cliente] ="productSelected"></product-detail>
+
+    </div>
+</main>

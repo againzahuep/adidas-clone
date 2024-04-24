@@ -1,0 +1,18 @@
+<button
+  class={\`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
+  ${
+  this.backgroundColor
+  ? `${this.backgroundColor} ${this.textColor} ${this.borderColor}`
+  : `bg-coral-red text-white border-coral-red`
+  } rounded-full ${this.fullWidth && "w-full"}\`}
+>
+{{label}}
+
+{{iconURL && (
+<img
+  src=${this.iconURL}
+  alt='arrow right icon'
+  class='ml-2 rounded-full bg-white w-5 h-5'
+/>
+)}}
+</button>

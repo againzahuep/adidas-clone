@@ -1,0 +1,11 @@
+<div class="col-sm">
+  <ul *ngIf="product | async " class="list-group text-dark mb-3">
+    <li class="group-item active">
+      <img src="{{product.Content}}" alt="null">{{product.Image1}}/>
+    </li>
+    <li class="group-item">{{product.Price}}</li>
+    <li class="group-item">{{product.Color_detail.image_url}}</li>
+  </ul>
+</div>
+
+
