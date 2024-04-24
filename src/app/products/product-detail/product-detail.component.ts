@@ -8,7 +8,7 @@ import {ProductService} from "../../services/product.service";
 
 @Component({
   selector: 'product-detail',
-  templateUrl: './product-detail.component.html',
+  templateUrl: 'product-detail.component.html',
   standalone: true,
   imports: [AsyncPipe, CurrencyPipe]
 })

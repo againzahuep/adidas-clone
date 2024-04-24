@@ -33,16 +33,13 @@ export const routes: Routes = [
       { path: 'service-card', component: ServiceCard},
       { path: 'review-card', component: ReviewCard },
       { path: 'popular-product-card', component: PopularProductCard },
-      { path: 'button-atom', component: ButtonAtom}
+      { path: 'button-atom', component: ButtonAtom},
+      {
+        path: '/product-detail',
+        loadComponent: () => import('./products/product-detail/product-detail.component').then(m => m.ProductDetailComponent)
+      }
     ]
   },
-  {
-    title: 'product-detail',
-    path: '/product-detail',
-    loadComponent: () => import('./products/product-detail/product-detail.component').then(m => m.ProductDetailComponent)
-  },
-
-
   { path: '**', redirectTo:'' },
 
 ]
